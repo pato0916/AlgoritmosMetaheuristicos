@@ -16,11 +16,11 @@ else:
 
 np.random.seed(semilla)
 
-for i in range(p):
-     print(i+1,": ", np.random.randint(1,p)) 
-     print(i+1,": ", np.random.rand())
-           
-poblacion = np.zeros((p,n), int)
 
+poblacion = np.zeros((p,n), int)
+for i in range(p):
+    fila = np.arange(n)  # Crea un arreglo de 0 a n-1
+    np.random.shuffle(fila)  
+    poblacion[i] = fila  # Asigna la fila barajada a la matriz
 print(poblacion)
         
