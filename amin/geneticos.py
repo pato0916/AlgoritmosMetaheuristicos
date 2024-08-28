@@ -18,5 +18,5 @@ np.random.seed(semilla)
 
 for i in range(p):
      print(i+1,": ", np.random.randint(1,p)) 
-     danweko
+     
         
